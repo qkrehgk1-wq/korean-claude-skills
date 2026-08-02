@@ -5,11 +5,11 @@
 # 🇰🇷 Korean Claude Skills
 
 ### 매일 쓰는 한국어 문서, Claude가 5분 만에 끝내는 법
-**보고서·회의록·이메일 하루 3건 → 15분으로 줄인 Claude 스킬 5종 (무료·오픈소스)**
+**보고서·회의록·이메일 하루 3건 → 15분으로 줄인 Claude 스킬 6종 (무료·오픈소스)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Quality Score](https://img.shields.io/badge/AI%20품질검토-8.3%2F10-brightgreen)](https://github.com/qkrehgk1-wq/korean-cloude-skills)
-[![Skills](https://img.shields.io/badge/스킬-5종-blue)](https://github.com/qkrehgk1-wq/korean-cloude-skills)
+[![Skills](https://img.shields.io/badge/스킬-6종-blue)](https://github.com/qkrehgk1-wq/korean-cloude-skills)
 [![Free](https://img.shields.io/badge/무료-오픈소스-orange)](https://github.com/qkrehgk1-wq/korean-cloude-skills)
 
 </div>
@@ -22,7 +22,7 @@
 > "회의 끝나고 회의록 정리하다 퇴근이 늦어진다."
 > "Claude 써보고 싶은데, 한국어로 제대로 쓰는 법을 모르겠다."
 
-**Korean Claude Skills**는 한국어 직장 문서 작업에 최적화된 Claude Skill 5종을 **무료**로 제공합니다.
+**Korean Claude Skills**는 한국어 직장 문서 작업에 최적화된 Claude Skill 6종을 **무료**로 제공합니다.
 
 - 🎯 **타깃**: 매일 한국어 문서 작업을 하는 직장인·마케터·1인 사업가
 - 🔓 **라이선스**: MIT (무료 오픈소스, 상업적 사용 가능)
@@ -30,7 +30,7 @@
 
 ---
 
-## 🗂️ 스킬 5종 한눈에 보기
+## 🗂️ 스킬 6종 한눈에 보기
 
 | # | 스킬 | 한 줄 설명 | 예상 절감 |
 |---|------|------------|-----------|
@@ -39,6 +39,7 @@
 | 3 | 📝 [**회의록 정리기**](skills/korean-meeting-notes/) | 날것의 메모·녹취 → 결정사항·액션(담당·기한)·미결 | ~30분 → 3분 |
 | 4 | ✉️ [**이메일 작성기**](skills/korean-email-writer/) | 상황·톤 지정 → 격식별 비즈니스 한국어 이메일 | ~20분 → 2분 |
 | 5 | 💻 [**코드리뷰 한글화**](skills/korean-code-review/) | 코드·diff → 버그·보안·개선 한국어 리뷰 | ~30분 → 2분 |
+| 6 | ✍️ [**글 윤문기**](skills/korean-writing-refiner/) | 거친 한국어 글 → 자연스럽고 명확하게 + 무엇을 왜 고쳤는지 코칭 | ~15분 → 1분 |
 
 ---
 
