@@ -18,3 +18,8 @@ jobs:
           python-version: "3.12"
       - name: 스킬·플러그인 설정 검사
         run: python scripts/validate_skills.py
+      - name: 한 장 안내문 스크립트 시험
+        # 실제 인쇄 쪽수 시험은 끈다: 쪽수는 설치된 한글 글꼴에 따라 달라질 수 있어 러너 결과를 믿기 어렵다 (Windows Edge에서만 확인함)
+        env:
+          HANJANG_BROWSER: none
+        run: python -m unittest discover -s tests -v

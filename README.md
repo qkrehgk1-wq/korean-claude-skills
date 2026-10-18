@@ -1,16 +1,16 @@
-<!-- 검색 키워드: Claude 한국어, 클로드 스킬, Claude Skill 한국어, Claude Code 플러그인, 한국어 AI 문서 자동화, 보고서 요약 AI, 회의록 자동화, 이메일 자동 작성, 카드뉴스 생성, 코드리뷰 한글화, 글 윤문 -->
+<!-- 검색 키워드: Claude 한국어, 클로드 스킬, Claude Skill 한국어, Claude Code 플러그인, 한국어 AI 문서 자동화, 보고서 요약 AI, 회의록 자동화, 이메일 자동 작성, 카드뉴스 생성, 코드리뷰 한글화, 글 윤문, 안내문 한 장, A4 한 장 HTML -->
 
 <div align="center">
 
 # 🇰🇷 Korean Claude Skills
 
 ### 매일 쓰는 한국어 문서, Claude에게 형식까지 맞춰 맡기는 법
-**보고서·회의록·이메일·카드뉴스·코드리뷰·글 윤문 — 한국 직장인용 Claude 스킬 6종 (무료·오픈소스)**
+**보고서·회의록·이메일·카드뉴스·코드리뷰·글 윤문·한 장 안내문 — 한국 직장인용 Claude 스킬 7종 (무료·오픈소스)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Skills](https://img.shields.io/badge/스킬-6종-blue)](https://github.com/qkrehgk1-wq/korean-claude-skills)
+[![Skills](https://img.shields.io/badge/스킬-7종-blue)](https://github.com/qkrehgk1-wq/korean-claude-skills)
 [![Claude Code Plugin](https://img.shields.io/badge/Claude%20Code-플러그인%20설치-8A63D2)](#방법-1-claude-code-플러그인-추천-)
-[![Version](https://img.shields.io/badge/버전-1.2.0-lightgrey)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/버전-1.3.0-lightgrey)](CHANGELOG.md)
 
 </div>
 
@@ -22,14 +22,14 @@
 > "회의 끝나고 회의록 정리하다 퇴근이 늦어진다."
 > "Claude 써보고 싶은데, 한국어로 제대로 쓰는 법을 모르겠다."
 
-**Korean Claude Skills**는 한국어 직장 문서 작업에 맞춘 Claude 스킬 6종을 **무료**로 제공합니다.
+**Korean Claude Skills**는 한국어 직장 문서 작업에 맞춘 Claude 스킬 7종을 **무료**로 제공합니다.
 
 - 🎯 **대상**: 매일 한국어 문서 작업을 하는 직장인·마케터·1인 사업가
 - 🔓 **라이선스**: MIT (무료 오픈소스, 상업적 사용 가능)
 
 ---
 
-## 🗂️ 스킬 6종 한눈에 보기
+## 🗂️ 스킬 7종 한눈에 보기
 
 | # | 스킬 | 한 줄 설명 |
 |---|------|------------|
@@ -39,6 +39,7 @@
 | 4 | ✉️ [**이메일 작성기**](skills/korean-email-writer/) | 상황·톤 지정 → 격식별 비즈니스 한국어 이메일 + 보내기 전 체크 |
 | 5 | 💻 [**코드리뷰 한글화**](skills/korean-code-review/) | 코드·diff → 버그·보안·개선 한국어 리뷰 |
 | 6 | ✍️ [**글 윤문기**](skills/korean-writing-refiner/) | 거친 한국어 글 → 자연스럽게 + 무엇을 왜 고쳤는지 코칭 |
+| 7 | 🗒️ [**한 장 안내문**](skills/korean-one-page/) | 안내문·절차 → 인쇄용 A4 한 장 HTML + 쉬운 말·기준일·실제 인쇄 쪽수 점검 (파이썬 필요) |
 
 ---
 
@@ -46,7 +47,7 @@
 
 ### 방법 1. Claude Code 플러그인 (추천) ⭐
 
-Claude Code 대화창에 두 줄을 입력하면 6종이 한 번에 설치됩니다.
+Claude Code 대화창에 두 줄을 입력하면 7종이 한 번에 설치됩니다.
 
 ```
 /plugin marketplace add qkrehgk1-wq/korean-claude-skills
@@ -55,7 +56,7 @@ Claude Code 대화창에 두 줄을 입력하면 6종이 한 번에 설치됩니
 
 설치 후에는 **"이 보고서 요약해줘"**처럼 평소대로 말하면 알맞은 스킬이 자동으로 쓰입니다. 직접 부르려면 `/korean-claude-skills:korean-report-summarizer`처럼 입력합니다. 새 버전이 나오면 `/plugin` 메뉴에서 업데이트할 수 있습니다.
 
-> 설치해 두는 것만으로 대화마다 약 390토큰(스킬 목록 설명)이 쓰이고, 스킬이 실제로 실행될 때 350~600토큰이 더 쓰입니다. (`claude plugin details` 기준 추정치)
+> 설치해 두는 것만으로 대화마다 약 480토큰(스킬 목록 설명)이 쓰이고, 스킬이 실제로 실행될 때 370~600토큰이 더 쓰입니다. (`claude plugin details` 기준 추정치, v1.3.0 7종)
 
 ### 방법 2. 스킬 폴더 복사 (원하는 것만)
 
@@ -76,6 +77,8 @@ cp -r korean-claude-skills/skills/korean-report-summarizer ~/.claude/skills/
 `SKILL.md` 본문을 `system` 프롬프트로 넣어 자동화에 연결합니다. 예제는 [docs/INSTALL.md](docs/INSTALL.md).
 
 > 💡 이 스킬은 Claude를 더 잘 쓰게 해 주는 "지침"입니다. Claude(무료/Pro/API) 자체는 별도로 필요합니다.
+>
+> 🗒️ **한 장 안내문**만은 HTML을 만드는 파이썬 스크립트(3.10 이상, 추가 설치 없음)를 함께 씁니다. 그래서 **방법 1·2(Claude Code)**에서만 동작하고, 방법 3·4처럼 본문만 복사해서는 쓸 수 없습니다.
 
 ---
 
@@ -143,11 +146,11 @@ cp -r korean-claude-skills/skills/korean-report-summarizer ~/.claude/skills/
 릴리스마다 아래를 실제로 실행합니다. 점수를 매기는 대신 **통과/실패**로만 적습니다.
 
 - `claude plugin validate .` — 마켓플레이스·플러그인 설정 파일 검사
-- 별도 설정 폴더에 플러그인을 실제 설치해 스킬 6종이 모두 인식되는지 확인
-- 스킬 6종을 실제 업무 문장으로 한 번씩 실행해, 각 스킬만 내는 출력 형식(예: 회의록의 "미결", 이메일의 "보내기 전 체크")이 나오는지 확인
+- 별도 설정 폴더에 플러그인을 실제 설치해 스킬이 모두 인식되는지 확인
+- 스킬을 실제 업무 문장으로 한 번씩 실행해, 각 스킬만 내는 출력 형식(예: 회의록의 "미결", 이메일의 "보내기 전 체크")이 나오는지 확인
 - 같은 입력을 스킬 없이 넣었을 때는 그 형식이 나오지 않는지 대조 확인
 
-v1.2.0 결과는 [CHANGELOG.md](CHANGELOG.md)에 있습니다.
+각 버전 결과는 [CHANGELOG.md](CHANGELOG.md)에 있습니다.
 
 ---
 
@@ -156,6 +159,7 @@ v1.2.0 결과는 [CHANGELOG.md](CHANGELOG.md)에 있습니다.
 - [x] v1.0 스킬 5종 배포
 - [x] v1.1 글 윤문기 추가 (6종)
 - [x] v1.2 Claude Code 플러그인 설치 지원, 실행 검증 공개
+- [x] v1.3 한 장 안내문 추가 (7종) — 첫 스크립트 포함 스킬, 자동 시험 22개
 - [ ] 각 스킬 `examples/` 실제 입출력 샘플 추가
 - [ ] 영문 README
 

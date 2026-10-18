@@ -1,7 +1,7 @@
 {
   "name": "korean-claude-skills",
-  "description": "한국어 직장 문서 작업용 Claude 스킬 6종. 보고서 3줄 요약·액션 아이템, 인스타 카드뉴스 구성안, 회의록(결정사항·담당·기한), 격식별 비즈니스 이메일, 한국어 코드리뷰, 글 윤문과 수정 이유 코칭.",
-  "version": "1.2.0",
+  "description": "한국어 직장 문서 작업용 Claude 스킬 7종. 보고서 3줄 요약·액션 아이템, 인스타 카드뉴스 구성안, 회의록(결정사항·담당·기한), 격식별 비즈니스 이메일, 한국어 코드리뷰, 글 윤문과 수정 이유 코칭, 안내문·절차를 인쇄용 A4 한 장 HTML로.",
+  "version": "1.3.0",
   "author": {
     "name": "qkrehgk1-wq"
   },
@@ -16,6 +16,9 @@
     "email",
     "cardnews",
     "code-review",
-    "writing"
+    "writing",
+    "notice",
+    "one-page",
+    "안내문"
   ]
 }

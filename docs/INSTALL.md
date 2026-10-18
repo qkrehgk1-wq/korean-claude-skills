@@ -13,7 +13,7 @@ Claude Code 대화창에 입력합니다.
 /plugin install korean-claude-skills@korean-claude-skills
 ```
 
-- 6종이 한 번에 설치되고, 평소처럼 "이 보고서 요약해줘"라고 말하면 알맞은 스킬이 자동으로 쓰입니다.
+- 7종이 한 번에 설치되고, 평소처럼 "이 보고서 요약해줘"라고 말하면 알맞은 스킬이 자동으로 쓰입니다.
 - 직접 부를 때: `/korean-claude-skills:korean-report-summarizer`
 - 업데이트: `/plugin` 메뉴에서 이 플러그인을 선택해 업데이트합니다.
 - 삭제: `/plugin uninstall korean-claude-skills@korean-claude-skills`
